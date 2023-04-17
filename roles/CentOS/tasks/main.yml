@@ -1,0 +1,6 @@
+---
+
+- name: Install Prometheus (CentOS)
+  tags: prometheus, centos
+  command: snap install prometheus --classic
+  when: ansible_distribution == "CentOS"
